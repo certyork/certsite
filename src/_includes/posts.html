@@ -8,6 +8,8 @@ prism: true
     <div class="container">
         <h2 class="title">{{title}}</h2>
         <p><time> {{ date | readableDate }} by {{ author }} </time></p>
+        <article>
         {{ content | safe }}
+        </article>
     </div>
 </section>
