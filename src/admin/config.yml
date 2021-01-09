@@ -39,6 +39,7 @@ collections:
         name: "items"
         file: "src/_data/navigation.yaml"
         fields:
+          - { label: "Image", name: "logo", widget: "image"}
           - label: Nav Items
             name: items
             widget: list
