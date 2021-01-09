@@ -8,10 +8,6 @@ tags:
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac luctus ante. Suspendisse potenti. Nullam vitae bibendum ante. Phasellus ut tellus mauris. Vestibulum posuere, massa at tempus interdum, tortor sapien mattis lorem, id tincidunt orci quam non neque. Fusce ac libero sed eros lacinia imperdiet facilisis in dolor. Ut suscipit justo lobortis eros lacinia congue.
 
-
-
-![](/static/img/logo.png)
-
 Quisque dignissim turpis at mi commodo, a scelerisque leo scelerisque. Maecenas magna neque, porta sed nunc a, mollis porta odio. Integer fermentum eros non massa vulputate, venenatis luctus est condimentum. Nam fringilla feugiat enim, ut lobortis ante finibus at. Pellentesque sed convallis lorem, eu rhoncus dui. Nulla facilisi. Quisque malesuada rhoncus turpis, at euismod urna fringilla ut. Curabitur luctus, purus at tincidunt imperdiet, ex justo faucibus est, in consectetur eros justo at felis. Ut quis interdum mauris. Sed mattis nunc ut dolor tincidunt suscipit. Suspendisse et mauris neque. Duis nec erat varius, convallis ipsum quis, imperdiet sapien. Suspendisse pharetra efficitur arcu quis fermentum. Morbi maximus magna purus, nec molestie dui egestas iaculis. Sed accumsan erat quam, et cursus lacus congue vitae. Suspendisse pretium eleifend blandit.
 
 In convallis eros et purus vestibulum ullamcorper. Ut convallis mauris at felis cursus interdum. Aenean egestas ultricies augue, placerat semper eros condimentum a. Praesent molestie suscipit diam ac euismod. Pellentesque dictum purus vel vehicula ullamcorper. Maecenas ac leo mollis urna iaculis pretium. Cras quis velit lacus. Curabitur elementum eu leo et pulvinar. Mauris consectetur arcu ipsum, vel commodo nibh convallis vel. Vivamus quis porttitor nulla. Cras venenatis leo turpis, eu consectetur lectus dapibus a. Nullam eu eros eu nunc semper fringilla interdum sit amet ipsum. Mauris et blandit erat, vel efficitur purus.
