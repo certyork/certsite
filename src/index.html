@@ -4,6 +4,19 @@ title: Neat Starter
 path: home
 ---
 
+<section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container">
+      <p class="subtitle">
+        The Converge Evaluation and Research Team is a group of people with lived experience of
+        mental health difficulties who are trained in research methods at York St John
+        University. We conduct evaluations of mental health services and community projects and pursue
+        academic research opportunities. <b>Contact us at Cert@yorksj.ac.uk</b>
+      </p>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <h2 class="title"> Why choose CERT for an evaluation or research project</h2>
@@ -89,30 +102,15 @@ path: home
   </div>
 </section>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<section class="section">
   <div class="container">
-      <div class="navbar-brand">
-          <a class="navbar-item"><img style="max-height:initial; height: 55px" src="logo.png"></a>
-          <a role="button" class="navbar-burger burger" aria-label="menu" style="height:initial" aria-expanded="false"
-              data-target="navbarBasicExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-          </a>
-      </div>
-      <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end">
-              {% if navigation.items %}
-                  {% for item in navigation.items %}
-                      <a href="{{item.url}}" class="navbar-item">{{item.text}}</a>
-                  {% endfor %}
-              {% endif %}
-              <a class="navbar-item">
-                  <span class="icon has-text-link">
-                      <i class="fab fa-facebook-square"></i>
-                  </span>
-              </a>
-          </div>
-      </div>
+    <h2 class="title">Hear what our clients have to say about our work</h2>
+    <p class="section" style="background: white; margin-bottom: 15px; border-radius: 20px">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      "
+    </p>
+    <p class="subtitle">John Doe - Community Service X</p>
+    <button class="button is-primary">Previous</button>
+    <button class="button is-primary">Next</button>
   </div>
-</nav>
+</section>
