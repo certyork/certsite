@@ -1,9 +1,25 @@
-<footer class="{{ 'fixed' if path == 'home' }} bottom-0 text-center w-full py-4">
-    <small class="text-gray-500">Copyright ©
-        {{settings.name}}
-        2020. Made with ❤ by
-        <a href="{{settings.url}}" target="_blank" class="underline">{{settings.author}}</a>
-        •
-        <a href="https://github.com/surjithctly/neat-starter" class="underline" target="_blank" rel="noopener">View on Github</a>
-    </small>
-</footer>
+<section class="section has-background-dark">
+    <form class="container">
+        <div class="title has-text-light">Ask a question or book an evaluation</div>
+        <div class="field">
+            <label class="label has-text-light">Email</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Text input">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label has-text-light">Message</label>
+            <div class="control">
+                <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+        </div>
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-primary">Submit</button>
+            </div>
+            <div>
+                <span class="has-text-light">or email us at Cert@yorksj.ac.uk</span>
+            </div>
+        </div>
+    </form>
+</section>

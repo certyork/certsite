@@ -1,10 +1,13 @@
 ---
 items:
-  - text: Menu One
-    url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
+  - text: Research and Evaluation Services
+    url: "/"
+  - text: Publications and Reports
+    url: "/publications"
+  - text: Our Mission and Values
+    url: "/values"
+  - text: Join CERT
+    url: "/join_us"
   - text: Blog
     url: "/blog"
+
