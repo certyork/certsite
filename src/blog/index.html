@@ -7,8 +7,8 @@ layout: blog
 
     {% for post in postslist | reverse %}
         <article style='margin-top: 40px'>
-            <h2 class="title is-4" color='#4A4A4A'>
-                <a href="{{ post.url | url }}">
+            <h2 class="title is-4">
+                <a href="{{ post.url | url }}"  color='#4A4A4A'>
                     {% if post.data.title %}
                         {{ post.data.title }}
                     {% else %}
@@ -31,7 +31,7 @@ layout: blog
             {% endif %}
 
             <p>
-                <a href="{{ post.url | url }}" class="">
+                <a href="{{ post.url | url }}"  color='blue'>
                     Read more →
                 </a>
             </p>
