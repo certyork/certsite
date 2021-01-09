@@ -1,13 +1,12 @@
----
+logo: /static/img/logo.png
 items:
   - text: Research and Evaluation Services
-    url: "/"
+    url: /
   - text: Publications and Reports
-    url: "/publications"
+    url: /publications
   - text: Our Mission and Values
-    url: "/values"
+    url: /values
   - text: Join CERT
-    url: "/join_us"
+    url: /join_us
   - text: Blog
-    url: "/blog"
-
+    url: /blog
