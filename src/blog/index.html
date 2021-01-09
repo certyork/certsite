@@ -6,7 +6,7 @@ layout: blog
     {% set postslist = collections.post %}
 
     {% for post in postslist | reverse %}
-        <article class="">
+        <article style='margin-top: 20px'>
             <h2 class="title is-4" color='#4A4A4A'>
                 <a href="{{ post.url | url }}">
                     {% if post.data.title %}
