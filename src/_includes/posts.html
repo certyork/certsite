@@ -4,7 +4,7 @@ prism: true
 ---
 <div class="section">
     <div class="container">
-        <div class="">
+        <div class="pb-5 mb-5 border-b border-gray-100">
             <h1 class="title">{{title}}</h1>
             <p class="subtitle">
                 <time> {{ date | readableDate }}
@@ -15,7 +15,7 @@ prism: true
             </p>
 
         </div>
-        <article class="prose" style='max-width: initial; all:initial;'>
+        <article class="prose" style='max-width: initial;'>
             {{ content | safe }}
         </article>
     </div>
