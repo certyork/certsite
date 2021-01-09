@@ -6,29 +6,39 @@ layout: blog
     {% set postslist = collections.post %}
 
     {% for post in postslist | reverse %}
+        
         <article>
-            <h2 class='subtitle' style="font-weight: 600">
-                <a href="{{ post.url | url }}">
-                    {% if post.data.title %}
-                        {{ post.data.title }}
-                    {% else %}
-                        Untitled
-                    {% endif %}
-                </a>
-            </h2>
-            <p class="subtitle">
-                <time>
-                    {{ post.date | readableDate }}
-                    by
-                    <a>{{ post.data.author }}</a>
+            <div class="columns">
+                <div class="column">
+                    <h2 class='subtitle' style="font-weight: 600">
+                        <a href="{{ post.url | url }}">
+                            {% if post.data.title %}
+                                {{ post.data.title }}
+                            {% else %}
+                                Untitled
+                            {% endif %}
+                        </a>
+                    </h2>
+                </div>
+                <div class="column">
+                    <p class="subtitle">
+                        <time>
+                            {{ post.date | readableDate }}
+                            by
+                            <a>{{ post.data.author }}</a>
 
-                </time>
-            </p>
+                        </time>
+                    </p>
+                </div>
+            </div>
+                
+
             {% if post.data.description %}
                 <p>
                     {{ post.data.description }}
                 </p>
             {% endif %}
+
 
             <p>
                 <a href="{{ post.url | url }}">
@@ -37,5 +47,6 @@ layout: blog
             </p>
 
         </article>
+
     {% endfor %}
 </section>
