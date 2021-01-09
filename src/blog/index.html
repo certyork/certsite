@@ -7,7 +7,7 @@ layout: blog
 
     {% for post in postslist | reverse %}
         <article>
-            <h2>
+            <h2 class='subtitle' style="font-weight: 600">
                 <a href="{{ post.url | url }}">
                     {% if post.data.title %}
                         {{ post.data.title }}
@@ -16,7 +16,7 @@ layout: blog
                     {% endif %}
                 </a>
             </h2>
-            <p>
+            <p class="subtitle">
                 <time>
                     {{ post.date | readableDate }}
                     by
