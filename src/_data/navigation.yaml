@@ -10,4 +10,6 @@ items:
     url: "/join_us"
   - text: Blog
     url: "/blog"
+fields:
+  - { label: "Image", name: "logo", widget: "image"}
 
