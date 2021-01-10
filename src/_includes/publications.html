@@ -2,4 +2,62 @@
 title: Publications and Reports
 layout: default
 ---
-{{ content | safe }}
+
+
+<section class="section">
+    <div class="container">
+    <h2 class="title"> Types of projects we engage in </h2>
+
+    Since we started in 2017, we have been involved in a wide variety of projects:
+    <br><br>
+    1) An evaluation of the Converge Theatre course in Northumbria University in
+    Newcastle using interviews.
+    <br><br>
+    2) A project exploring what ‘Converge’ means to Converge students using photographs
+    to support interviews.
+    <br><br>
+    3) An evaluation of an arts and mental health project in London using art to support
+    interviews and a questionnaire in both 2019 and 2020.
+    <br><br>
+    4) An evaluation of a woman’s refuge, using interviews.
+    <br><br>
+    5) An evaluation of the York Multiple and Complex Needs Network, using interviews,
+    and creating a theatre performance capturing our findings.
+    <br><br>
+    6) An evaluation of a project at Tang Hall Smart where we used music to support
+    interviews.
+    <br><br>
+    7) An evaluation of St Nicks Ecotherapy project.
+    <br><br>
+    8) We are currently working on a project exploring mental health waiting rooms.
+    {{ content | safe }}     
+    </div>
+</section>
+
+<section class="section" style='background: #f5f5f5'>
+    <div class="container">
+    <h2 class="title"> Reports and Publications </h2>
+    <article class="panel">
+        <div class="panel-block">
+        <p class="control has-icons-left">
+            <input class="input" type="text" placeholder="Search">
+            <span class="icon is-left">
+            <i class="fas fa-search" aria-hidden="true"></i>
+            </span>
+        </p>
+        </div>
+        {% if publications.links %}
+            {% for pub in publications.links %}
+                <a class="panel-block" href="{{pub.url}}">
+                <span class="panel-icon">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                {{pub.title}}
+                </a>
+        {% endif %}
+
+    </article>
+    </div>
+</section>
+
+
