@@ -75,8 +75,13 @@ layout: default
 
         function searchPubs(){
             pubsHTML.innerHTML = ""
-            if(pubsSearch.value.trim() === "")
+            if(pubsSearch.value.trim() === ""){
+                showAllPubs();
+                return
+            }
             for(var pub in pubs){
+                console.log(pubs[pub][1]);
+                console.log(pubsSearch.value);
                 if(pubs[pub][1].includes(pubsSearch.value)){
                     pubsHTML.innerHTML += '<a class="panel-block" href="'+pubs[pub][0]+'"><span class="panel-icon"><i class="fas fa-book" aria-hidden="true"></i></span>'+pubs[pub][1]+'</a>';
                 }
