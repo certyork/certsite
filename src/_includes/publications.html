@@ -69,7 +69,7 @@ layout: default
         function showAllPubs(){
             pubsHTML.innerHTML = ""
             for(var pub in pubs){
-                pubsHTML.innerHTML += '<a class="panel-block" href="'+pub[0]+'"><span class="panel-icon"><i class="fas fa-book" aria-hidden="true"></i>'+pub[1]+'</span></a>';
+                pubsHTML.innerHTML += '<a class="panel-block" href="'+pubs[pub][0]+'"><span class="panel-icon"><i class="fas fa-book" aria-hidden="true"></i></span>'+pubs[pub][1]+'</a>';
             }
         }
 
@@ -77,8 +77,8 @@ layout: default
             pubsHTML.innerHTML = ""
             if(pubsSearch.value.trim() === "")
             for(var pub in pubs){
-                if(pub[1].includes(pubsSearch.value)){
-                    pubsHTML.innerHTML += '<a class="panel-block" href="'+pub[0]+'"><span class="panel-icon"><i class="fas fa-book" aria-hidden="true"></i>'+pub[1]+'</span></a>';
+                if(pubs[pub][1].includes(pubsSearch.value)){
+                    pubsHTML.innerHTML += '<a class="panel-block" href="'+pubs[pub][0]+'"><span class="panel-icon"><i class="fas fa-book" aria-hidden="true"></i></span>'+pubs[pub][1]+'</a>';
                 }
             }
         }
