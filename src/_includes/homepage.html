@@ -99,9 +99,9 @@ layout: default
         <span id='testimonialtxt'></span>
       "
     </p>
-    <p class="subtitle">John Doe - Community Service X</p>
-    <button class="button is-primary">Previous</button>
-    <button class="button is-primary">Next</button>
+    <p class="subtitle" id='testimonialclient'></p>
+    <button class="button is-primary" onclick='prevTestimonial'>Previous</button>
+    <button class="button is-primary" onclick='nextTestimonial'>Next</button>
   </div>
 </section>
 
@@ -113,11 +113,13 @@ layout: default
     {% endfor %}
     function nextTestimonial(){
         testimonialIndex = (testimonialIndex+1) % testimonials.length;
-        document.getElementById("testimonialtxt").innerHTML = testimonials[testimonialIndex];
+        document.getElementById("testimonialtxt").innerHTML = testimonials[testimonialIndex][0];
+        document.getElementById("testimonialclient").innerHTML = testimonials[testimonialIndex][1];
     }
-    function nextTestimonial(){
+    function prevTestimonial(){
         testimonialIndex = (testimonialIndex-1) % testimonials.length;
-        document.getElementById("testimonialtxt").innerHTML = testimonials[testimonialIndex];
+        document.getElementById("testimonialtxt").innerHTML = testimonials[testimonialIndex][0];
+        document.getElementById("testimonialclient").innerHTML = testimonials[testimonialIndex][1];
     }
 </script>
 
