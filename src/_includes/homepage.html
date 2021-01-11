@@ -121,7 +121,7 @@ layout: default
     function prevTestimonial(){
         testimonialIndex = (testimonialIndex-1);
         if (testimonialIndex == 0){
-            testimonialIndex = testimonials.length;
+            testimonialIndex = testimonials.length-1;
         }
         document.getElementById("testimonialtxt").innerHTML = testimonials[testimonialIndex][0];
         document.getElementById("testimonialclient").innerHTML = testimonials[testimonialIndex][1];
