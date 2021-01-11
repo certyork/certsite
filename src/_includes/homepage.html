@@ -119,7 +119,10 @@ layout: default
         document.getElementById("testimonialclient").innerHTML = testimonials[testimonialIndex][1];
     }
     function prevTestimonial(){
-        testimonialIndex = (testimonialIndex-1) % testimonials.length;
+        testimonialIndex = (testimonialIndex-1);
+        if (testimonialIndex == 0){
+            testimonialIndex = testimonials.length;
+        }
         document.getElementById("testimonialtxt").innerHTML = testimonials[testimonialIndex][0];
         document.getElementById("testimonialclient").innerHTML = testimonials[testimonialIndex][1];
     }
