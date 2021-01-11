@@ -52,10 +52,21 @@ collections:
         name: "links"
         file: "src/_data/publications.yaml"
         fields:
-          - label: Nav Items
+          - label: Publications
             name: links
             widget: list
             collapsed: false
             fields:
               - { label: Title, name: title, widget: string }
               - { label: File, name: url, widget: file }
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "src/_data/testimonials.yaml"
+        fields:
+          - label: Testimonials
+            name: items
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Content, name: content, widget: text }
+              - { label: Client, name: client, widget: string }
