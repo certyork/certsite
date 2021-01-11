@@ -62,16 +62,20 @@ layout: default
         {% endfor %}
         var pubsHTML = document.getElementById('publications');
         var pubsSearch = document.getElementById('publicationsearch');
+        console.log(pubs);
+        console.log(pubs[0]);
+        showAllPubs();
 
         function showAllPubs(){
-            pubs.innerHTML = ""
+            pubsHTML.innerHTML = ""
             for(var pub in pubs){
                 pubsHTML.innerHTML += '<a class="panel-block" href="'+pub[0]+'"><span class="panel-icon"><i class="fas fa-book" aria-hidden="true"></i>'+pub[1]+'</span></a>';
             }
         }
 
         function searchPubs(){
-            pubs.innerHTML = ""
+            pubsHTML.innerHTML = ""
+            if(pubsSearch.value.trim() === "")
             for(var pub in pubs){
                 if(pub[1].includes(pubsSearch.value)){
                     pubsHTML.innerHTML += '<a class="panel-block" href="'+pub[0]+'"><span class="panel-icon"><i class="fas fa-book" aria-hidden="true"></i>'+pub[1]+'</span></a>';
