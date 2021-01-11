@@ -109,7 +109,7 @@ layout: default
     var testimonials = [];
     var testimonialIndex = 0;
     {% for testimonial in testimonials.items %}
-        testimonials.push([{{testimonial.content}}, {{testimonial.client}}])
+        testimonials.push(['{{testimonial.content}}', '{{testimonial.client}}'])
     {% endfor %}
     document.getElementById("testimonialtxt").innerHTML = testimonials[testimonialIndex][0];
     document.getElementById("testimonialclient").innerHTML = testimonials[testimonialIndex][1];
