@@ -40,25 +40,43 @@ layout: default
     <article class="panel">
         <div class="panel-block">
         <p class="control has-icons-left">
-            <input class="input" type="text" placeholder="Search">
+            <input class="input" type="text" placeholder="Search" id='publicationsearch' oninput='searchPubs()'>
             <span class="icon is-left">
             <i class="fas fa-search" aria-hidden="true"></i>
             </span>
         </p>
         </div>
-        {% if publications.links %}
-            {% for pub in publications.links %}
-                <a class="panel-block" href="{{pub.url}}">
-                <span class="panel-icon">
-                    <i class="fas fa-book" aria-hidden="true"></i>
-                </span>
-                {{pub.title}}
-                </a>
-            {% endfor %}
-        {% endif %}
+        <span id='publications'>
 
+        </span>
     </article>
     </div>
 </section>
 
+<script>
+    {% if publications.links %}
+        var pubs = [];
+        {% for pub in publications.links %}
+            pubs.push(['{{pub.url}}','{{pub.title}}'])
 
+        {% endfor %}
+        var pubsHTML = document.getElementById('publications');
+        var pubsSearch = document.getElementById('publicationsearch');
+
+        function showAllPubs(){
+            pubs.innerHTML = ""
+            for(var pub in pubs){
+                pubsHTML.innerHTML += '<a class="panel-block" href="'+pub[0]+'"><span class="panel-icon"><i class="fas fa-book" aria-hidden="true"></i>'+pub[1]+'</span></a>';
+            }
+        }
+
+        function searchPubs(){
+            pubs.innerHTML = ""
+            for(var pub in pubs){
+                if(pub[1].includes(pubsSearch.value)){
+                    pubsHTML.innerHTML += '<a class="panel-block" href="'+pub[0]+'"><span class="panel-icon"><i class="fas fa-book" aria-hidden="true"></i>'+pub[1]+'</span></a>';
+                }
+            }
+        }
+    {% endif %}
+</script>
