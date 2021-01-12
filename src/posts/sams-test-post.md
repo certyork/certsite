@@ -3,8 +3,6 @@ title: Sams test post
 description: Here is a test post written by Sam you can see what i wrote by clicking
 author: Sam
 date: 2021-01-09T21:41:17.988Z
-tags:
-  - Tags
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac luctus ante. Suspendisse potenti. Nullam vitae bibendum ante. Phasellus ut tellus mauris. Vestibulum posuere, massa at tempus interdum, tortor sapien mattis lorem, id tincidunt orci quam non neque. Fusce ac libero sed eros lacinia imperdiet facilisis in dolor. Ut suscipit justo lobortis eros lacinia congue.
 
