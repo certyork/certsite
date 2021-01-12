@@ -131,23 +131,23 @@ layout: default
 {% endif %}
 
 <section class="section has-background-dark" id='contactform'>
-  <form class="container">
+  <form class="container" method='POST' data-netlify='true'>
     <div class="title has-text-light">Ask a question or book an evaluation</div>
     <div class="field">
       <label class="label has-text-light">Email</label>
       <div class="control">
-        <input class="input" type="text" placeholder="Text input">
+        <input name='email' class="input" type="text" placeholder="Text input">
       </div>
     </div>
     <div class="field">
       <label class="label has-text-light">Message</label>
       <div class="control">
-        <textarea class="textarea" placeholder="Textarea"></textarea>
+        <textarea name='message' class="textarea" placeholder="Textarea"></textarea>
       </div>
     </div>
     <div class="field is-grouped">
       <div class="control">
-        <button class="button is-primary">Submit</button>
+        <input type='submit' class="button is-primary" value='Submit'>
       </div>
       <div>
         <span class="has-text-light">or email us at Cert@yorksj.ac.uk</span>
